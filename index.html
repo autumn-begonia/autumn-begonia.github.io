@@ -50,20 +50,23 @@ p {
     text-decoration: underline;
 }
 #profile-picture {
-    position: relative;
     float: right;
     width: 150px;
     height: auto;
     margin-left: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.intro {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 </style>
 <meta content="text/html; charset=unicode" http-equiv="Content-Type">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<img id="profile-picture" src="profile-picture.jpg" alt="Profile Picture">
 
 <table border="0" width="100%">
   <tbody>
@@ -85,7 +88,7 @@ p {
               <td colspan="2"></td>
             </tr>
             <tr height="20">
-              <td>
+              <td class="intro">
                 <p class="caption">秋海棠</p>
                 <p class="content">
                   <img id="profile-picture" src="profile-picture.jpg" alt="Profile Picture">
