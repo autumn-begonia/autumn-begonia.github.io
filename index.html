@@ -56,11 +56,21 @@ p {
     margin-left: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.intro, .contact {
+.intro {
     background: rgba(255, 255, 255, 0.8);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact {
+    padding: 0;
+}
+.contact p {
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .footer {
     text-align: center;
@@ -131,10 +141,10 @@ function switchLanguage(language) {
 </div>
 
 <div class="contact" data-lang="zh">
-    <p>联系邮箱: <span>autumnbegonia99@gmail.com</span></p>
+    <p>联系邮箱: autumnbegonia99@gmail.com</p>
 </div>
 <div class="contact hidden" data-lang="en">
-    <p>Contact Email: <span>autumnbegonia99@gmail.com</span></p>
+    <p>Contact Email: autumnbegonia99@gmail.com</p>
 </div>
 
 <table border="0" width="100%">
