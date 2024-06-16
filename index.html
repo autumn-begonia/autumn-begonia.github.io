@@ -6,8 +6,11 @@
 body {
     margin: 30px 20px;
     font-family: Tahoma, Geneva, sans-serif;
-    background: url('background-pattern.jpg') repeat;
-    background-size: cover;
+    /* 选择你喜欢的背景样式 */
+    background: linear-gradient(to right, #e0f7fa, #ffffff); /* 渐变淡雅背景 */
+    /* background: url('background-pattern.jpg') repeat center center fixed; */ /* 柔和花朵背景 */
+    /* background: linear-gradient(to right, #f0f0f0, #ffffff); background-image: repeating-linear-gradient(45deg, #d0e0f0, #d0e0f0 10px, #ffffff 10px, #ffffff 20px); */ /* 素雅条纹背景 */
+    background-size: 50%;
 }
 p {
     margin-top: 0px;
@@ -53,9 +56,8 @@ p {
     position: absolute;
     top: 20px;
     right: 20px;
-    border-radius: 50%;
     width: 150px;
-    height: 150px;
+    height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 </style>
