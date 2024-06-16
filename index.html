@@ -6,10 +6,7 @@
 body {
     margin: 30px 20px;
     font-family: Tahoma, Geneva, sans-serif;
-    /* 选择你喜欢的背景样式 */
-/*     background: linear-gradient(to right, #e0f7fa, #ffffff); /* 渐变淡雅背景 */ */
-    background: url('background-pattern.jpg') repeat center center fixed; 
-/*     background: linear-gradient(to right, #f0f0f0, #ffffff); background-image: repeating-linear-gradient(45deg, #d0e0f0, #d0e0f0 10px, #ffffff 10px, #ffffff 20px); */ /* 素雅条纹背景 */
+    background: url('background-pattern.jpg') repeat;
     background-size: 50%;
 }
 p {
@@ -53,11 +50,11 @@ p {
     text-decoration: underline;
 }
 #profile-picture {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: relative;
+    float: right;
     width: 150px;
     height: auto;
+    margin-left: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 </style>
@@ -90,7 +87,10 @@ p {
             <tr height="20">
               <td>
                 <p class="caption">秋海棠</p>
-                <p class="content"><strong>个人简介:</strong> 秋海棠，籍贯广东省江门市新会区，本人是一位小学高级教师(已退休)。平时热爱诗词及文章创作，多年来创作了海量原创诗词，还有散文、杂文、链接评论等……希望通过这些作品，传递对生活的热爱和对大自然的赞美，以及抒发对现实中杰出人物的崇敬之情，传播正能量。同时希望能得到大家的共鸣与支持，从而激发出无穷的创作动力来创造精品。</p>
+                <p class="content">
+                  <img id="profile-picture" src="profile-picture.jpg" alt="Profile Picture">
+                  <strong>个人简介:</strong> 秋海棠，籍贯广东省江门市新会区，本人是一位小学高级教师(已退休)。平时热爱诗词及文章创作，多年来创作了海量原创诗词，还有散文、杂文、链接评论等……希望通过这些作品，传递对生活的热爱和对大自然的赞美，以及抒发对现实中杰出人物的崇敬之情，传播正能量。同时希望能得到大家的共鸣与支持，从而激发出无穷的创作动力来创造精品。
+                </p>
               </td>
             </tr>
             <tr height="40">
@@ -315,7 +315,7 @@ p {
       冲破黑暗是黎明。<br>
       🙏🙏🙏🙏🙏🙏<br>
     </p>
-    <p class="content"><a href="https://view.inews.qq.com/w/WXN2024061100218900?bat_id=2100307956&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300307957&newsGid=20240611_r7231621&rate=0&pushid=2024061101&bkt=0&openid=o04IBALBXSeBeHeWF_yVFovjG6mY&tbkt=F&cg=4&it=1&ext=%7B%22pl%22%3A510910%7D&lrg=4&allcmsids=WXN2024061100218900_WXN2024061100192700_WXN2024061100202600_WXN2024061100215300&segmentNum=2210&groupid=1718083929&msgid=0&key=&version=28003156&devicetype=android-31&wuid=oDdoCt2AYciqsmPZnwiLcKzRtn00" target="_blank">阅读原文</a></p>
+    <p class="content"><a href="https://view.inews.qq.com/w/WXN2024061100218900?bat_id=2100307956&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300307957&newsGid=20240611_r7231621&rate=0&pushid=2024061101&bkt=0&openid=o04IBALBXSeBeHeWF_yVFovjG6mY&tbkt=F&cg=4&it=1&ext=%7B%22pl%22%3A510910%7D&lrg=4&allcmsids=WXN2024061100218900_WXN2024061100192700_WXN2024061100202600_WXN2024061100215300&segmentNum=2210&groupid=1718083929&msgid=0&key=&version=28003157&devicetype=android-31&wuid=oDdoCt2AYciqsmPZnwiLcKzRtn00" target="_blank">阅读原文</a></p>
   </div>
 </div>
 
