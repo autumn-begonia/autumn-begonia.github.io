@@ -625,10 +625,28 @@ function switchLanguage(language) {
         <textarea name="message" placeholder="Leave a message here..." required></textarea>
       </label>
       <!-- your other form fields go here -->
-      <button type="submit" data-lang="zh" style="background-color: #add8e6;" class="hidden">提交</button>
+      <button type="submit" data-lang="zh" style="background-color: #add8e6;">提交</button>
       <button type="submit" data-lang="en" style="background-color: #add8e6;" class="hidden">Send</button>
     </form>
 </div>
+
+<script>
+function switchLanguage(language) {
+    var elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(function(element) {
+        if (element.getAttribute('data-lang') === language) {
+            element.classList.remove('hidden');
+        } else {
+            element.classList.add('hidden');
+        }
+    });
+}
+
+// 初始化时显示中文
+document.addEventListener("DOMContentLoaded", function() {
+    switchLanguage('zh');
+});
+</script>
 
 
 <div class="footer">
