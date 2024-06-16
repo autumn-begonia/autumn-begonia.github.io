@@ -608,13 +608,23 @@ function switchLanguage(language) {
   </div>
 </div>
 
-<div class="contact" data-lang="zh">
-    <p>联系邮箱: autumnbegonia99@gmail.com <a href="#message-box">留言给我</a></p>
-</div>
-<div class="contact hidden" data-lang="en">
-    <p>Contact Email: autumnbegonia99@gmail.com <a href="#message-box">Leave a message</a></p>
-</div>
-
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xnqeewzq"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+    
 <div class="message-box" id="message-box">
     <h2 class="title-large" data-lang="zh">留言板</h2>
     <h2 class="title-large hidden" data-lang="en">Message Board</h2>
@@ -625,30 +635,17 @@ function switchLanguage(language) {
     >
       <label data-lang="zh">
         你的留言:
-        <textarea name="message" placeholder="在此留言..." required></textarea>
+        <textarea name="message" required></textarea>
       </label>
       <label data-lang="en" class="hidden">
         Your message:
-        <textarea name="message" placeholder="Leave a message here..." required></textarea>
+        <textarea name="message" required></textarea>
       </label>
       <!-- your other form fields go here -->
       <button type="submit" style="background-color: #add8e6;">提交</button>
       <button type="submit" class="hidden" style="background-color: #add8e6;">Send</button>
     </form>
 </div>
-
-<script>
-function switchLanguage(language) {
-    var elements = document.querySelectorAll('[data-lang]');
-    elements.forEach(function(element) {
-        if (element.getAttribute('data-lang') === language) {
-            element.classList.remove('hidden');
-        } else {
-            element.classList.add('hidden');
-        }
-    });
-}
-</script>
 
 
 <div class="footer">
