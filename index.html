@@ -618,15 +618,15 @@ function switchLanguage(language) {
     >
       <label data-lang="zh">
         你的留言:
-        <textarea name="message" required></textarea>
+        <textarea name="message" placeholder="在此留言..." required></textarea>
       </label>
       <label data-lang="en" class="hidden">
         Your message:
-        <textarea name="message" required></textarea>
+        <textarea name="message" placeholder="Leave a message here..." required></textarea>
       </label>
       <!-- your other form fields go here -->
-      <button type="submit" style="background-color: #add8e6;">提交</button>
-      <button type="submit" class="hidden" style="background-color: #add8e6;">Send</button>
+      <button type="submit" data-lang="zh" style="background-color: #add8e6;">提交</button>
+      <button type="submit" data-lang="en" style="background-color: #add8e6;" class="hidden">Send</button>
     </form>
 </div>
 
