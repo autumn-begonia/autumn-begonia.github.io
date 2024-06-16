@@ -62,11 +62,48 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 30px;
+}
+.contact {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+}
+.message-box {
+    width: 100%;
+    margin-top: 20px;
+}
+.message-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.message-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+}
 </style>
 <meta content="text/html; charset=unicode" http-equiv="Content-Type">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+<div class="contact">
+    <p>联系邮箱: autumnbegonia99@gmail.com</p>
+</div>
 
 <table border="0" width="100%">
   <tbody>
@@ -320,6 +357,18 @@ p {
     </p>
     <p class="content"><a href="https://view.inews.qq.com/w/WXN2024061100218900?bat_id=2100307956&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300307957&newsGid=20240611_r7231621&rate=0&pushid=2024061101&bkt=0&openid=o04IBALBXSeBeHeWF_yVFovjG6mY&tbkt=F&cg=4&it=1&ext=%7B%22pl%22%3A510910%7D&lrg=4&allcmsids=WXN2024061100218900_WXN2024061100192700_WXN2024061100202600_WXN2024061100215300&segmentNum=2210&groupid=1718083929&msgid=0&key=&version=28003157&devicetype=android-31&wuid=oDdoCt2AYciqsmPZnwiLcKzRtn00" target="_blank">阅读原文</a></p>
   </div>
+</div>
+
+<div class="message-box">
+    <h2 class="title-large">留言板</h2>
+    <form action="https://formspree.io/f/{你的Formspree ID}" method="POST">
+        <textarea id="message" name="message" placeholder="在此留言..." required></textarea>
+        <button type="submit">提交</button>
+    </form>
+</div>
+
+<div class="footer">
+    <p>All Rights Reserved @ 秋海棠</p>
 </div>
 
 </body>
