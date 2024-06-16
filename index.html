@@ -601,13 +601,25 @@ function switchLanguage(language) {
 <div class="message-box">
     <h2 class="title-large" data-lang="zh">留言板</h2>
     <h2 class="title-large hidden" data-lang="en">Message Board</h2>
-    <form action="https://formspree.io/f/xnqeewzq" method="POST">
-        <textarea id="message" name="message" placeholder="在此留言..." required data-lang="zh"></textarea>
-        <textarea id="message" name="message" placeholder="Leave a message here..." required class="hidden" data-lang="en"></textarea>
-        <button type="submit" data-lang="zh">提交</button>
-        <button type="submit" class="hidden" data-lang="en">Submit</button>
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form
+      action="https://formspree.io/f/xnqeewzq"
+      method="POST"
+    >
+      <label data-lang="zh">
+        你的留言:
+        <textarea name="message" required></textarea>
+      </label>
+      <label data-lang="en" class="hidden">
+        Your message:
+        <textarea name="message" required></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit" data-lang="zh" style="background-color: #add8e6;">提交</button>
+      <button type="submit" class="hidden" data-lang="en" style="background-color: #add8e6;">Send</button>
     </form>
 </div>
+
 
 <div class="footer">
     <p>All Rights Reserved @ 秋海棠</p>
